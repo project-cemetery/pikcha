@@ -1,0 +1,70 @@
+{
+  "name": "pikcha",
+  "version": "1.0.0",
+  "repository": "git@github.com:igorkamyshev/pikcha.git",
+  "author": "Igor Kamyshev <igor@kamyshev.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@yarnpkg/pnpify": "^2.0.0-rc.25",
+    "babel-eslint": "^10.1.0",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-node": "^0.3.4",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-import-helpers": "^1.0.2",
+    "eslint-plugin-unicorn": "^18.0.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  },
+  "scripts": {
+    "pretty": "yarn prettier --write .",
+    "commit": "yarn git-cz",
+    "lint:code": "yarn eslint \"./**/*.{js,jsx}\"",
+    "dev": "yarn nodemon"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{tsx,ts,js,jsx,scss,css,js,json,md}": [
+      "yarn prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint-staged",
+      "commit-msg": "yarn commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {
+    "@solid-soda/cache": "^0.4.1",
+    "@solid-soda/config": "^2.2.0",
+    "awilix": "^4.2.6",
+    "color-thief": "^2.2.5",
+    "fastify": "^2.15.0",
+    "fastify-cors": "^3.0.3",
+    "fastify-swagger": "^2.6.0",
+    "jimp": "^0.14.0",
+    "md5": "^2.2.1",
+    "node-fetch": "^2.6.0",
+    "rgb-hex": "^3.0.0"
+  }
+}

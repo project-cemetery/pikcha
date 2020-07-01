@@ -1,0 +1,6 @@
+{
+  "watch": ["app"],
+  "ext": "js",
+  "ignore": ["src/**/*.test.*"],
+  "exec": "NODE_ENV=development yarn node app/index.js"
+}
