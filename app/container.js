@@ -3,6 +3,7 @@ const awilix = require('awilix');
 const { ColorController } = require('./presentation/color_controller');
 const { LowresController } = require('./presentation/lowres_controller');
 const { AccessGuard } = require('./presentation/access_guard');
+const { ValidationGuard } = require('./presentation/validation_guard');
 const { AccessManager } = require('./application/access_manager');
 const { CacheManager } = require('./application/cache_manager');
 const { ColorExtrator } = require('./application/color_extractor');
@@ -19,6 +20,7 @@ container.register({
   colorController: awilix.asClass(ColorController),
   lowresController: awilix.asClass(LowresController),
   accessGuard: awilix.asClass(AccessGuard),
+  validationGuard: awilix.asClass(ValidationGuard),
   // app
   accessManager: awilix.asClass(AccessManager),
   cacheManager: awilix.asClass(CacheManager),

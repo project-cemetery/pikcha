@@ -1,4 +1,4 @@
-const fastify = require('fastify')({ logger: true });
+const fastify = require('fastify')({ logger: false });
 const swagger = require('fastify-swagger');
 const cors = require('fastify-cors');
 
@@ -8,6 +8,9 @@ const { setupSwagger } = require('./presentation/swagger');
 const config = container.resolve('config');
 fastify.register(swagger, setupSwagger('/docs', config));
 fastify.register(cors);
+
+const validationGuard = container.resolve('validationGuard')
+validationGuard.hooks.forEach(({ hook, handle }) => fastify.addHook(hook, handle));
 
 const accessGuard = container.resolve('accessGuard');
 accessGuard.hooks.forEach(({ hook, handle }) => fastify.addHook(hook, handle));
