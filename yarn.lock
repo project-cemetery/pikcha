@@ -1942,6 +1942,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clean-deep@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "clean-deep@npm:3.3.0"
+  dependencies:
+    lodash.isempty: ^4.4.0
+    lodash.isplainobject: ^4.0.6
+    lodash.transform: ^4.6.0
+  checksum: 285f38a4158584ab66c635dc632431f6c5da89144daa8c2030329d5e7f890b2a59ee8b35fe3c887a77d2ae0cfdc520e8b98456698f94e2f8b372006a6b4c52eb
+  languageName: node
+  linkType: hard
+
 "clean-regexp@npm:^1.0.0":
   version: 1.0.0
   resolution: "clean-regexp@npm:1.0.0"
@@ -5005,6 +5016,20 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"lodash.isempty@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "lodash.isempty@npm:4.4.0"
+  checksum: f5cf56151caafd6c121a4957c44395c16b0df86fe9631c2f9bc814add0497ae4c2512c507166621f0ba1f572348e0b482716ec353756a9a4d54d9d05b554bb42
+  languageName: node
+  linkType: hard
+
+"lodash.isplainobject@npm:^4.0.6":
+  version: 4.0.6
+  resolution: "lodash.isplainobject@npm:4.0.6"
+  checksum: 72a114b610ec32a42b8cb47680d1729398caea0ee0631c0b220b97b21e7df19312377cb077acb6593bf6c5abdbdb43c530aa66b440e30d53324986d386808cd0
+  languageName: node
+  linkType: hard
+
 "lodash.map@npm:^4.5.1":
   version: 4.6.0
   resolution: "lodash.map@npm:4.6.0"
@@ -5028,6 +5053,13 @@ fsevents@~2.1.2:
   dependencies:
     lodash._reinterpolate: ^3.0.0
   checksum: 45546a5b76376b138ef4f01aa2722813127c639428eb9baef3fbac176b509ee2dab5cb9d1ee8267dbeeef8d49371f9a748af3df83649bf8b75fa54993f65b7aa
+  languageName: node
+  linkType: hard
+
+"lodash.transform@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "lodash.transform@npm:4.6.0"
+  checksum: f62d863f33e2bf299e78f7afff82d84040532ce6377c269e4da01256e733470b86138d741304c3dd8876918767b27daab16cc7042d5d8066d5802175707c61bc
   languageName: node
   linkType: hard
 
@@ -6292,6 +6324,7 @@ fsevents@~2.1.2:
     "@yarnpkg/pnpify": ^2.0.0-rc.25
     awilix: ^4.2.6
     babel-eslint: ^10.1.0
+    clean-deep: ^3.3.0
     color-thief: ^2.2.5
     commitizen: ^4.1.2
     cz-conventional-changelog: ^3.2.0

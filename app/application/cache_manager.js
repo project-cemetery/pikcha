@@ -1,12 +1,24 @@
 const { Cache, InMemoryProvider, RedisProvider } = require('@solid-soda/cache');
+const cleanDeep = require('clean-deep');
 const md5 = require('md5');
 
 class CacheManager {
   #cache;
 
   constructor({ config }) {
-    // TODO: if in config we found redix config, replace InMemotyProvider with RedisProvider
-    this.#cache = new Cache(new InMemoryProvider());
+    const redisConfig = {
+      host: config.getStringOrElse('REDIS_HOST', null),
+      port: config.getNumberOrElse('REDIS_PORT', null),
+      password: config.getStringOrElse('REDIS_PASSWORD', null),
+    };
+
+    const useRedis = Object.values(redisConfig).some(Boolean);
+
+    const provider = useRedis
+      ? new RedisProvider(cleanDeep(redisConfig))
+      : new InMemoryProvider();
+
+    this.#cache = new Cache(provider);
   }
 
   provide = async (params, calculate) => {
