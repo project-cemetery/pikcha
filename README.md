@@ -17,6 +17,10 @@ docker pull igorkamyshev/pikcha:latest
 docker run -p 3000:3000 -it igorkamyshev/pikcha
 ```
 
+## Usage
+
+Just call [Pikcha-api](https://pikcha.kamyshev.me/docs) on server-side by HTTP and return response to client-side.
+
 ## Configuration
 
 Pikcha is [Twelve-Factor-App-ready](https://12factor.net) and can be configured using `ENV` variables.
