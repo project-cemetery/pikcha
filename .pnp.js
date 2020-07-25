@@ -39,7 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ],
       [
         "@solid-soda/cache",
-        "npm:0.4.1"
+        "npm:0.5.0"
       ],
       [
         "@solid-soda/config",
@@ -155,7 +155,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@commitlint/cli", "npm:8.3.5"],
             ["@commitlint/config-conventional", "npm:8.3.4"],
-            ["@solid-soda/cache", "npm:0.4.1"],
+            ["@solid-soda/cache", "npm:0.5.0"],
             ["@solid-soda/config", "npm:2.2.0"],
             ["@yarnpkg/pnpify", "virtual:3d6d519f7b8db367010ee782475a99341155de388ccf868e8155704a8a8cd988ee668953f60e8281ec00706cfdccba32feb7ec54db1377eb9d6be94db35a29fa#npm:2.0.0-rc.25"],
             ["awilix", "npm:4.2.6"],
@@ -304,7 +304,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/helper-split-export-declaration", "npm:7.10.1"],
             ["@babel/parser", "npm:7.10.3"],
             ["@babel/types", "npm:7.10.3"],
-            ["debug", "virtual:d27045f313cae7cbc212b229738d5843f6d2265eba3ea36069f78075a79d301bc17e702a21a7b811ca9aa59de4cb7943fb27cda91a0e7d8a8ad547668124b185#npm:4.2.0"],
+            ["debug", "virtual:b18f385be8755deac44dfb7dc2887fd90b06e79022bb6489b9984e9ae1ac0520cb812255eadf299b2031f7876475c7ec9d30ece42d32e3f8c461ab6644d6c5fa#npm:4.2.0"],
             ["globals", "npm:11.12.0"],
             ["lodash", "npm:4.17.15"]
           ],
@@ -1129,16 +1129,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@solid-soda/cache", [
-        ["npm:0.4.1", {
-          "packageLocation": "./.yarn/cache/@solid-soda-cache-npm-0.4.1-3b55dbce41-12e88f2ece.zip/node_modules/@solid-soda/cache/",
+        ["npm:0.5.0", {
+          "packageLocation": "./.yarn/cache/@solid-soda-cache-npm-0.5.0-100934437e-9cf985625b.zip/node_modules/@solid-soda/cache/",
           "packageDependencies": [
-            ["@solid-soda/cache", "npm:0.4.1"],
+            ["@solid-soda/cache", "npm:0.5.0"],
             ["date-fns", "npm:1.30.1"],
             ["fs-extra", "npm:8.1.0"],
+            ["ioredis", "npm:4.17.3"],
             ["md5", "npm:2.2.1"],
             ["redis", "npm:2.8.0"],
-            ["redis-commands", "npm:1.5.0"],
-            ["then-redis", "virtual:3b55dbce411cff42fa4272a6a2419b6f240344ac3e573d9a20472167639dd02dec5c9ef90c459244b476458cd3451b37d1801b79a778d6196296536c9ec50b55#npm:2.0.1"]
+            ["redis-commands", "npm:1.5.0"]
           ],
           "linkType": "HARD",
         }]
@@ -1860,7 +1860,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["avvio", "npm:6.4.1"],
             ["archy", "npm:1.0.0"],
-            ["debug", "virtual:d27045f313cae7cbc212b229738d5843f6d2265eba3ea36069f78075a79d301bc17e702a21a7b811ca9aa59de4cb7943fb27cda91a0e7d8a8ad547668124b185#npm:4.2.0"],
+            ["debug", "virtual:b18f385be8755deac44dfb7dc2887fd90b06e79022bb6489b9984e9ae1ac0520cb812255eadf299b2031f7876475c7ec9d30ece42d32e3f8c461ab6644d6c5fa#npm:4.2.0"],
             ["fastq", "npm:1.8.0"]
           ],
           "linkType": "HARD",
@@ -2490,6 +2490,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["cluster-key-slot", [
+        ["npm:1.1.0", {
+          "packageLocation": "./.yarn/cache/cluster-key-slot-npm-1.1.0-c895b3234e-3b41b06942.zip/node_modules/cluster-key-slot/",
+          "packageDependencies": [
+            ["cluster-key-slot", "npm:1.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["code-point-at", [
         ["npm:1.1.0", {
           "packageLocation": "./.yarn/cache/code-point-at-npm-1.1.0-37de5fe566-7d9837296e.zip/node_modules/code-point-at/",
@@ -2942,10 +2951,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["virtual:d27045f313cae7cbc212b229738d5843f6d2265eba3ea36069f78075a79d301bc17e702a21a7b811ca9aa59de4cb7943fb27cda91a0e7d8a8ad547668124b185#npm:4.2.0", {
-          "packageLocation": "./.yarn/$$virtual/debug-virtual-95216c7992/0/cache/debug-npm-4.2.0-9392baba7e-dcfb8ede26.zip/node_modules/debug/",
+        ["virtual:b18f385be8755deac44dfb7dc2887fd90b06e79022bb6489b9984e9ae1ac0520cb812255eadf299b2031f7876475c7ec9d30ece42d32e3f8c461ab6644d6c5fa#npm:4.2.0", {
+          "packageLocation": "./.yarn/$$virtual/debug-virtual-4e2e69bb18/0/cache/debug-npm-4.2.0-9392baba7e-dcfb8ede26.zip/node_modules/debug/",
           "packageDependencies": [
-            ["debug", "virtual:d27045f313cae7cbc212b229738d5843f6d2265eba3ea36069f78075a79d301bc17e702a21a7b811ca9aa59de4cb7943fb27cda91a0e7d8a8ad547668124b185#npm:4.2.0"],
+            ["debug", "virtual:b18f385be8755deac44dfb7dc2887fd90b06e79022bb6489b9984e9ae1ac0520cb812255eadf299b2031f7876475c7ec9d30ece42d32e3f8c461ab6644d6c5fa#npm:4.2.0"],
             ["ms", "npm:2.1.2"],
             ["supports-color", null]
           ],
@@ -3113,6 +3122,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/delegates-npm-1.0.0-9b1942d75f-7459e34d29.zip/node_modules/delegates/",
           "packageDependencies": [
             ["delegates", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["denque", [
+        ["npm:1.4.1", {
+          "packageLocation": "./.yarn/cache/denque-npm-1.4.1-91d454774e-174e81b3c9.zip/node_modules/denque/",
+          "packageDependencies": [
+            ["denque", "npm:1.4.1"]
           ],
           "linkType": "HARD",
         }]
@@ -3424,7 +3442,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ajv", "npm:6.12.2"],
             ["chalk", "npm:2.4.2"],
             ["cross-spawn", "npm:6.0.5"],
-            ["debug", "virtual:d27045f313cae7cbc212b229738d5843f6d2265eba3ea36069f78075a79d301bc17e702a21a7b811ca9aa59de4cb7943fb27cda91a0e7d8a8ad547668124b185#npm:4.2.0"],
+            ["debug", "virtual:b18f385be8755deac44dfb7dc2887fd90b06e79022bb6489b9984e9ae1ac0520cb812255eadf299b2031f7876475c7ec9d30ece42d32e3f8c461ab6644d6c5fa#npm:4.2.0"],
             ["doctrine", "npm:3.0.0"],
             ["eslint-scope", "npm:5.1.0"],
             ["eslint-utils", "npm:1.4.3"],
@@ -4996,6 +5014,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["ioredis", [
+        ["npm:4.17.3", {
+          "packageLocation": "./.yarn/cache/ioredis-npm-4.17.3-b18f385be8-06036dfe0a.zip/node_modules/ioredis/",
+          "packageDependencies": [
+            ["ioredis", "npm:4.17.3"],
+            ["cluster-key-slot", "npm:1.1.0"],
+            ["debug", "virtual:b18f385be8755deac44dfb7dc2887fd90b06e79022bb6489b9984e9ae1ac0520cb812255eadf299b2031f7876475c7ec9d30ece42d32e3f8c461ab6644d6c5fa#npm:4.2.0"],
+            ["denque", "npm:1.4.1"],
+            ["lodash.defaults", "npm:4.2.0"],
+            ["lodash.flatten", "npm:4.4.0"],
+            ["redis-commands", "npm:1.5.0"],
+            ["redis-errors", "npm:1.2.0"],
+            ["redis-parser", "npm:3.0.0"],
+            ["standard-as-callback", "npm:2.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["ipaddr.js", [
         ["npm:1.9.1", {
           "packageLocation": "./.yarn/cache/ipaddr.js-npm-1.9.1-19ae7878b4-de15bc7e63.zip/node_modules/ipaddr.js/",
@@ -5724,7 +5760,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["cli-truncate", "npm:2.1.0"],
             ["commander", "npm:5.1.0"],
             ["cosmiconfig", "npm:6.0.0"],
-            ["debug", "virtual:d27045f313cae7cbc212b229738d5843f6d2265eba3ea36069f78075a79d301bc17e702a21a7b811ca9aa59de4cb7943fb27cda91a0e7d8a8ad547668124b185#npm:4.2.0"],
+            ["debug", "virtual:b18f385be8755deac44dfb7dc2887fd90b06e79022bb6489b9984e9ae1ac0520cb812255eadf299b2031f7876475c7ec9d30ece42d32e3f8c461ab6644d6c5fa#npm:4.2.0"],
             ["dedent", "npm:0.7.0"],
             ["enquirer", "npm:2.3.5"],
             ["execa", "npm:4.0.2"],
@@ -5834,6 +5870,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/lodash._reinterpolate-npm-3.0.0-3c62ca439e-27513557d6.zip/node_modules/lodash._reinterpolate/",
           "packageDependencies": [
             ["lodash._reinterpolate", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["lodash.defaults", [
+        ["npm:4.2.0", {
+          "packageLocation": "./.yarn/cache/lodash.defaults-npm-4.2.0-c5dea025ab-fde72e71f7.zip/node_modules/lodash.defaults/",
+          "packageDependencies": [
+            ["lodash.defaults", "npm:4.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["lodash.flatten", [
+        ["npm:4.4.0", {
+          "packageLocation": "./.yarn/cache/lodash.flatten-npm-4.4.0-495935e617-f22a7f6f16.zip/node_modules/lodash.flatten/",
+          "packageDependencies": [
+            ["lodash.flatten", "npm:4.4.0"]
           ],
           "linkType": "HARD",
         }]
@@ -7275,7 +7329,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pikcha", "workspace:."],
             ["@commitlint/cli", "npm:8.3.5"],
             ["@commitlint/config-conventional", "npm:8.3.4"],
-            ["@solid-soda/cache", "npm:0.4.1"],
+            ["@solid-soda/cache", "npm:0.5.0"],
             ["@solid-soda/config", "npm:2.2.0"],
             ["@yarnpkg/pnpify", "virtual:3d6d519f7b8db367010ee782475a99341155de388ccf868e8155704a8a8cd988ee668953f60e8281ec00706cfdccba32feb7ec54db1377eb9d6be94db35a29fa#npm:2.0.0-rc.25"],
             ["awilix", "npm:4.2.6"],
@@ -7760,11 +7814,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["redis-errors", [
+        ["npm:1.2.0", {
+          "packageLocation": "./.yarn/cache/redis-errors-npm-1.2.0-a81fd9b0f1-b260bb64a1.zip/node_modules/redis-errors/",
+          "packageDependencies": [
+            ["redis-errors", "npm:1.2.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["redis-parser", [
         ["npm:2.6.0", {
           "packageLocation": "./.yarn/cache/redis-parser-npm-2.6.0-b0a7664bed-a5e845e3d4.zip/node_modules/redis-parser/",
           "packageDependencies": [
             ["redis-parser", "npm:2.6.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/redis-parser-npm-3.0.0-7ebe40abcb-45dbcb05be.zip/node_modules/redis-parser/",
+          "packageDependencies": [
+            ["redis-parser", "npm:3.0.0"],
+            ["redis-errors", "npm:1.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -8584,6 +8655,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["standard-as-callback", [
+        ["npm:2.0.1", {
+          "packageLocation": "./.yarn/cache/standard-as-callback-npm-2.0.1-08fa6456ff-58a0ddb90d.zip/node_modules/standard-as-callback/",
+          "packageDependencies": [
+            ["standard-as-callback", "npm:2.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["static-extend", [
         ["npm:0.1.2", {
           "packageLocation": "./.yarn/cache/static-extend-npm-0.1.2-2720ee6882-c42052c352.zip/node_modules/static-extend/",
@@ -8939,21 +9019,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/text-table-npm-0.2.0-d92a778b59-373904ce70.zip/node_modules/text-table/",
           "packageDependencies": [
             ["text-table", "npm:0.2.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["then-redis", [
-        ["virtual:3b55dbce411cff42fa4272a6a2419b6f240344ac3e573d9a20472167639dd02dec5c9ef90c459244b476458cd3451b37d1801b79a778d6196296536c9ec50b55#npm:2.0.1", {
-          "packageLocation": "./.yarn/$$virtual/then-redis-virtual-a84d9aaadd/0/cache/then-redis-npm-2.0.1-c2a2893fe5-20ce2459ca.zip/node_modules/then-redis/",
-          "packageDependencies": [
-            ["then-redis", "virtual:3b55dbce411cff42fa4272a6a2419b6f240344ac3e573d9a20472167639dd02dec5c9ef90c459244b476458cd3451b37d1801b79a778d6196296536c9ec50b55#npm:2.0.1"],
-            ["redis", "npm:2.8.0"],
-            ["redis-commands", "npm:1.5.0"]
-          ],
-          "packagePeers": [
-            "redis",
-            "redis-commands"
           ],
           "linkType": "HARD",
         }]

@@ -809,17 +809,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@solid-soda/cache@npm:^0.4.1":
-  version: 0.4.1
-  resolution: "@solid-soda/cache@npm:0.4.1"
+"@solid-soda/cache@npm:^0.5.0":
+  version: 0.5.0
+  resolution: "@solid-soda/cache@npm:0.5.0"
   dependencies:
     date-fns: ^1.30.1
     fs-extra: ^8.0.1
+    ioredis: ^4.17.3
     md5: ^2.2.1
     redis: ^2.8.0
     redis-commands: ^1.5.0
-    then-redis: ^2.0.1
-  checksum: 12e88f2ece8a17223d159bebc0d6df5b0607dcceb7a8e6be5fab4be806d81100e93793aa3cbed8cc127065323a600b6e2af131824bee6716741053ef481a0826
+  checksum: 9cf985625b04c5a603d225649f27e3ab7ff225087ffdf69b6234d126b573a1b9882377dfc6594a7b4480708c76fdaeed0b441dc81a98b0637ce416075203900d
   languageName: node
   linkType: hard
 
@@ -2027,6 +2027,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cluster-key-slot@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "cluster-key-slot@npm:1.1.0"
+  checksum: 3b41b06942f6b0df71029dec9df6a272be2ab78353d60fcdc5a4af3b88a749d7fb2d1d3b092db0108b2bdd104086c03edcaa3b25ef432590bb954981d6cd7715
+  languageName: node
+  linkType: hard
+
 "code-point-at@npm:^1.0.0":
   version: 1.1.0
   resolution: "code-point-at@npm:1.1.0"
@@ -2573,6 +2580,13 @@ __metadata:
   version: 1.0.0
   resolution: "delegates@npm:1.0.0"
   checksum: 7459e34d29cadd9bfd340728bfcc70ea96da5d940fb197298b523f805822680e583cba3ec34d36a18004325f1ec9de55e202a92b414d01db18cd87bb8a2ae5bd
+  languageName: node
+  linkType: hard
+
+"denque@npm:^1.1.0":
+  version: 1.4.1
+  resolution: "denque@npm:1.4.1"
+  checksum: 174e81b3c9407b2149216d9e793fb91d901c19b1225dceefdafe32d5abeca243382ffee9bb111a1f60e42d2791b457d029bb57379d48404b2fb351bf700b6a8c
   languageName: node
   linkType: hard
 
@@ -4263,6 +4277,23 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"ioredis@npm:^4.17.3":
+  version: 4.17.3
+  resolution: "ioredis@npm:4.17.3"
+  dependencies:
+    cluster-key-slot: ^1.1.0
+    debug: ^4.1.1
+    denque: ^1.1.0
+    lodash.defaults: ^4.2.0
+    lodash.flatten: ^4.4.0
+    redis-commands: 1.5.0
+    redis-errors: ^1.2.0
+    redis-parser: ^3.0.0
+    standard-as-callback: ^2.0.1
+  checksum: 06036dfe0ad2d1ce39404ab0250c891ac5a66942695c9a17c028f40b73365e60453e6b43dc7228597d22af7d59b8b582c576ddf1fb981d979990ece8850774a8
+  languageName: node
+  linkType: hard
+
 "ipaddr.js@npm:1.9.1":
   version: 1.9.1
   resolution: "ipaddr.js@npm:1.9.1"
@@ -5006,6 +5037,20 @@ fsevents@~2.1.2:
   version: 3.0.0
   resolution: "lodash._reinterpolate@npm:3.0.0"
   checksum: 27513557d6fe526296324f1de9e1b8e8ac88ef2a2544a655e825f3ab0f52c5a675f1a73a0c9ff3c64fda031c56dfb4deb9dac7c7d21f9a04bc63dd7db5a5a73d
+  languageName: node
+  linkType: hard
+
+"lodash.defaults@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "lodash.defaults@npm:4.2.0"
+  checksum: fde72e71f7b7ece10c24e43dd601574168467d50bc76687302d40de341d5cb8e35b100105d938458747d2ad5f20d8bb736e62523ef39d1a8b40f7307c50f10ac
+  languageName: node
+  linkType: hard
+
+"lodash.flatten@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "lodash.flatten@npm:4.4.0"
+  checksum: f22a7f6f163256d87345b07c76122e03d03abbf943b6c3aa5e5fafb7d5bce765013aedfc2aae7e649af0907287a2cf85de24237dbdd3ecd485a77d56e070b54c
   languageName: node
   linkType: hard
 
@@ -6319,7 +6364,7 @@ fsevents@~2.1.2:
   dependencies:
     "@commitlint/cli": ^8.3.5
     "@commitlint/config-conventional": ^8.3.4
-    "@solid-soda/cache": ^0.4.1
+    "@solid-soda/cache": ^0.5.0
     "@solid-soda/config": ^2.2.0
     "@yarnpkg/pnpify": ^2.0.0-rc.25
     awilix: ^4.2.6
@@ -6743,10 +6788,17 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"redis-commands@npm:^1.2.0, redis-commands@npm:^1.5.0":
+"redis-commands@npm:1.5.0, redis-commands@npm:^1.2.0, redis-commands@npm:^1.5.0":
   version: 1.5.0
   resolution: "redis-commands@npm:1.5.0"
   checksum: 09cd949613afa4ced55c7900178aa952193505910d8f4132ae0be5f0c7096f557bdf8a07210f9ebd22bc9dad763282497852ed20200a1fef6de7887724e2b6f0
+  languageName: node
+  linkType: hard
+
+"redis-errors@npm:^1.0.0, redis-errors@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "redis-errors@npm:1.2.0"
+  checksum: b260bb64a1c8523d32a56701681ac3e5cc6bb0a4eb09f1d30729ebba397021d274216ff189909c08fe3c6b706ec8b74948e20ea410b6f69d31b35bda3fb82a59
   languageName: node
   linkType: hard
 
@@ -6754,6 +6806,15 @@ fsevents@~2.1.2:
   version: 2.6.0
   resolution: "redis-parser@npm:2.6.0"
   checksum: a5e845e3d48e49c3b3b03f4a64c431d106fa130ac63d32694b2365e989580608f4e5c167548ebc2f6810c0c81316ece10ae84650d80ebe7b6a52c83e255cc8e7
+  languageName: node
+  linkType: hard
+
+"redis-parser@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "redis-parser@npm:3.0.0"
+  dependencies:
+    redis-errors: ^1.0.0
+  checksum: 45dbcb05bed2c80a4aac288bbefed2347ecf3508c24d542ab42efa21fd63b5aaca4208b206f05818835a2ac43abe09250c2638c11c3b0b66a5d67e83985e350f
   languageName: node
   linkType: hard
 
@@ -7514,6 +7575,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"standard-as-callback@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "standard-as-callback@npm:2.0.1"
+  checksum: 58a0ddb90d674f6af7e099c1fedd339276e98a218fd88f1a6134a4910c5ff8d272815cf8cc758b2d61fa3f523853c8fa6ef3cb0692912e7ff35870dedffa8ffc
+  languageName: node
+  linkType: hard
+
 "static-extend@npm:^0.1.1":
   version: 0.1.2
   resolution: "static-extend@npm:0.1.2"
@@ -7845,16 +7913,6 @@ fsevents@~2.1.2:
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
   checksum: 373904ce70524ba11ec7e1905c44fb92671132d5e0b0aba2fb48057161f8bf9cbf7f6178f0adf31810150cf44fb52c7b912dc722bff3fddf9688378596dbeb56
-  languageName: node
-  linkType: hard
-
-"then-redis@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "then-redis@npm:2.0.1"
-  peerDependencies:
-    redis: "*"
-    redis-commands: "*"
-  checksum: 20ce2459ca04bf55cff5663588b18c34cbe70907fe944923521faec6cf100698156c32e9ecdcd1b9fa0511c69a35b577411f4ee06251bf0ed96b75074fc424c1
   languageName: node
   linkType: hard
 

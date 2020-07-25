@@ -39,8 +39,7 @@ By default, Pikcha cache all responses in memory. This cache resets after contai
 
 Just set the following `ENV` variables:
 
-- `REDIS_HOST` — `string`, default is `localhost`
-- `REDIS_PORT` — `number`, default is `6379`
+- `REDIS_HOST` — `string`
+- `REDIS_PORT` — `number`
 - `REDIS_USER` — `string`, default is null
 - `REDIS_PASSWORD` — `string`, default is null
-- `REDIS_USE_SSL` — `boolean`, default is `false`

@@ -55,7 +55,7 @@
     }
   },
   "dependencies": {
-    "@solid-soda/cache": "^0.4.1",
+    "@solid-soda/cache": "^0.5.0",
     "@solid-soda/config": "^2.2.0",
     "awilix": "^4.2.6",
     "clean-deep": "^3.3.0",

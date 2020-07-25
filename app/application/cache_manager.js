@@ -9,6 +9,7 @@ class CacheManager {
     const redisConfig = {
       host: config.getStringOrElse('REDIS_HOST', null),
       port: config.getNumberOrElse('REDIS_PORT', null),
+      username: config.getStringOrElse('REDIS_USER', null),
       password: config.getStringOrElse('REDIS_PASSWORD', null),
     };
 
