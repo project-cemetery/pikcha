@@ -20,6 +20,7 @@ accessGuard.hooks.forEach(({ hook, handle }) => fastify.addHook(hook, handle));
 const controllers = [
   container.resolve('colorController'),
   container.resolve('lowresController'),
+  container.resolve('indexController'),
 ];
 controllers.forEach(({ path, docs, handle }) => {
   fastify.get(path, docs, handle);
