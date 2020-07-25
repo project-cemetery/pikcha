@@ -1,4 +1,4 @@
-const fastify = require('fastify')({ logger: false });
+const fastify = require('fastify')({ logger: true });
 const swagger = require('fastify-swagger');
 const cors = require('fastify-cors');
 
@@ -9,8 +9,10 @@ const config = container.resolve('config');
 fastify.register(swagger, setupSwagger('/docs', config));
 fastify.register(cors);
 
-const validationGuard = container.resolve('validationGuard')
-validationGuard.hooks.forEach(({ hook, handle }) => fastify.addHook(hook, handle));
+const validationGuard = container.resolve('validationGuard');
+validationGuard.hooks.forEach(({ hook, handle }) =>
+  fastify.addHook(hook, handle),
+);
 
 const accessGuard = container.resolve('accessGuard');
 accessGuard.hooks.forEach(({ hook, handle }) => fastify.addHook(hook, handle));
@@ -30,9 +32,7 @@ const start = async () => {
       fastify.swagger();
     });
 
-    await fastify.listen(3001, '0.0.0.0');
-
-    fastify.log.info(`Server listening on ${fastify.server.address().port}`);
+    fastify.listen(3001, '0.0.0.0');
   } catch (error) {
     fastify.log.error(error);
     // eslint-disable-next-line unicorn/no-process-exit
