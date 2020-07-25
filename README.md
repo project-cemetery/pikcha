@@ -1,6 +1,6 @@
 # Pikcha
 
-Simple micro service for provide placeholders (or skeletons) for large images on any website.
+Simple micro service for provide placeholders (or skeletons) for large images on any website or mobile apps.
 
 ## Happy path
 
