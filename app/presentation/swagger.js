@@ -1,3 +1,5 @@
+const { version } = require('../../package.json');
+
 const setupSwagger = (path, config) => {
   const host = config.getOrElse('EXTERNAL_HOST', 'localhost:3001');
 
@@ -8,6 +10,7 @@ const setupSwagger = (path, config) => {
       info: {
         title: 'Pikcha',
         description: 'Image performace optimizer',
+        version,
       },
       host,
       consumes: ['application/json'],
