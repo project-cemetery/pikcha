@@ -25,6 +25,8 @@ docker run -p 3000:3000 -it igorkamyshev/pikcha
 
 Just call [Pikcha-api](https://pikcha.kamyshev.me/docs) on server-side by HTTP and return response to client-side.
 
+You can explore and try Pikcha-api on our [public stand](https://pikcha.kamyshev.me/docs). But, on this instance you can send only images from http://placekitten.com 😸
+
 ## Configuration
 
 Pikcha is [Twelve-Factor-App-ready](https://12factor.net) and can be configured using `ENV` variables.
